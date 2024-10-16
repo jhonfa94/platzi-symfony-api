@@ -58,6 +58,19 @@ Instalamos la dependencia para los fixtures
     php bin/console doctrine:fixtures:load
 ```
 
+## Detallar las rutas
+```
+    php bin/console debug:router
+```
+
+## 
+```
+```
+
+## 
+```
+```
+
 ## 
 ```
 ```
