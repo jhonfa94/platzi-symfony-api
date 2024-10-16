@@ -63,8 +63,9 @@ Instalamos la dependencia para los fixtures
     php bin/console debug:router
 ```
 
-## 
+## Serializer pack
 ```
+    composer require symfony/serializer-pack
 ```
 
 ## 
