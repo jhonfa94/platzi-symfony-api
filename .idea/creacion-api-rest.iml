@@ -98,6 +98,11 @@
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/twig/twig" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/webmozart/assert" />
       <excludeFolder url="file://$MODULE_DIR$/src/vendor/willdurand/negotiation" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/doctrine/data-fixtures" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/doctrine/doctrine-fixtures-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/fakerphp/faker" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/zenstruck/assert" />
+      <excludeFolder url="file://$MODULE_DIR$/src/vendor/zenstruck/foundry" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

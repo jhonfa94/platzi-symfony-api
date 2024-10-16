@@ -34,6 +34,30 @@
     php bin/console doctrine:migrations:migrate
 ```
 
+## Instalar dependencia para los factories
+```
+    composer require zenstruck/foundry --dev
+```
 
+## Creamos factories de todas las entidades
+```
+    php bin/console make:factory
+```
+
+## Creación del archivo base para generar los datos falsos
+```
+    php bin/console make:fixtures
+```
+Instalamos la dependencia para los fixtures
+```
+     composer require orm-fixtures --dev
+```
+
+## Generamos los datos falsos
+```
+    php bin/console doctrine:fixtures:load
+```
+
+## 
 ```
 ```

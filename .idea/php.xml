@@ -106,6 +106,11 @@
       <path value="$PROJECT_DIR$/src/vendor/nikic/php-parser" />
       <path value="$PROJECT_DIR$/src/vendor/symfony/maker-bundle" />
       <path value="$PROJECT_DIR$/src/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/src/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/src/vendor/zenstruck/foundry" />
+      <path value="$PROJECT_DIR$/src/vendor/zenstruck/assert" />
+      <path value="$PROJECT_DIR$/src/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/src/vendor/doctrine/doctrine-fixtures-bundle" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.2" />
