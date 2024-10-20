@@ -13,31 +13,48 @@ use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
+use Symfony\Component\Serializer\Annotation\Groups;
+
 #[ORM\Entity(repositoryClass: CategoryRepository::class)]
 //#[ApiResource]
 #[ApiResource(
+    // shortName: 'nuevo-acceso',
+    // routePrefix: 'prefix',
+    description: 'Información adicional sobre esta clase',
     operations: [
         new Get(),
         new GetCollection(),
         new Store(),
         new Put(),
         new Patch(),
-    ]
+    ],
+    normalizationContext: ['groups' => ['category:read']],
 )]
 class Category
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
+    #[Groups(['category:read', 'post:read'])]
+    /**
+     * Identificador único en la tabla category
+     */
     private ?int $id = null;
 
     #[ORM\Column(length: 255)]
+    #[Groups(['category:read'])]
+    /**
+     * Nombre de la categoria
+     */
     private ?string $name = null;
 
     /**
      * @var Collection<int, Post>
      */
     #[ORM\OneToMany(targetEntity: Post::class, mappedBy: 'category', orphanRemoval: true)]
+    /**
+     * Publicaciones que pertenecen a la categoria, relación OneToMany
+     */
     private Collection $posts;
 
     public function __construct()

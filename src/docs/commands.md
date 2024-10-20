@@ -68,8 +68,9 @@ Instalamos la dependencia para los fixtures
     composer require symfony/serializer-pack
 ```
 
-## 
+## Instalar Debug de Symfony
 ```
+    composer require symfony/debug-pack --dev
 ```
 
 ## 
